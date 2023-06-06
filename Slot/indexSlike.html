@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+                        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+                        crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="style.css">
+            <title>Slot masina</title>
+</head>
+
+<body>
+            <div class="wrapper">
+                        <h1>Slot masina</h1>
+                        <span id="prvi"><img src="img/banana.png"></span>
+                        <span> - </span>
+                        <span id="drugi"><img src="img/banana.png"></span>
+                        <span> - </span>
+                        <span id="treci"><img src="img/banana.png"></span>
+                        <br><br>
+                        <input type="button" value="Zavrti" id="spin" onclick="playZavrtiZvuk();">
+                        <input type="button" value="Nova igra" id="nova" disabled="disabled">
+                        <div id="kredit">Preostali kredit: <b>-</b></div>
+                        <div id="rez"></div>
+                        <audio id="spin-sound" src="sound/sound/coin-win.wav"></audio>
+                        <audio id="jackpot-sound" src="sound/sound/win-jackpot.wav"></audio>
+                        <audio id="win-sound" src="sound/sound/ta-da.mp3"></audio>
+                        <audio id="lose-sound" src="sound/sound/loose-money.wav"></audio>
+
+            </div>
+
+
+
+
+            <script src="scriptSlike.js"></script>
+</body>
+
+</html>
